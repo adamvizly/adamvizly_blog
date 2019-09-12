@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    <title>Ali Asghari</title>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3621256c39ac447895a6e183f165e3c3 {
+                    position: relative;
+                    width: 70.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                    float: left;
+                    margin-right: 50px;
+                }
+                #resume_pdf {
+                    height: 100.0%;
+                    right: 0.0%;
+                    top: 0.0%;
+                    margin-left: 100px;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3621256c39ac447895a6e183f165e3c3" ></div>
+            <div class="nav" id="resume_pdf">
+                    <h2>Hi, I am Ali Asghari</h2>
+                    <p>I am a Python developer based in Tehran.</p>
+                    <p>Tel: +989147146122</p>
+                    <p>Email: asghari.ali10@gmail.com</p>
+                    <a href="https://github.com/adamvizly/adamvizly.github.io/raw/master/Ali's%20Resume.pdf">My Resume</a>
+            </div>
+
+</body>
+<script>    
+    
+            var map_3621256c39ac447895a6e183f165e3c3 = L.map(
+                "map_3621256c39ac447895a6e183f165e3c3",
+                {
+                    center: [36.4223704, 54.4009081],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9697f24176484ff5926b25a9d0a405cc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3621256c39ac447895a6e183f165e3c3);
+        
+    
+            var marker_5a3adc22639b4d5faa57824a46d37ef0 = L.marker(
+                [36.9661412, 46.1061001],
+                {"fill": true}
+            ).addTo(map_3621256c39ac447895a6e183f165e3c3);
+        
+    
+        var custom_icon_ca292ea718e8437e95127fe22b810776 = L.icon({"iconSize": [20, 20], "iconUrl": "https://raw.githubusercontent.com/adamvizly/adamvizly.github.io/master/icons/home.png"});
+        marker_5a3adc22639b4d5faa57824a46d37ef0.setIcon(custom_icon_ca292ea718e8437e95127fe22b810776);
+        
+    
+        var popup_87b61d947dbb42c9a1d682d45ab27aef = L.popup({"maxWidth": 100});
+
+        
+            var html_c258fb76607147f899db2e5ccfd3c5a2 = $(`<div id="html_c258fb76607147f899db2e5ccfd3c5a2" style="width: 100.0%; height: 100.0%;">This is Miandoab, my HomeTown</div>`)[0];
+            popup_87b61d947dbb42c9a1d682d45ab27aef.setContent(html_c258fb76607147f899db2e5ccfd3c5a2);
+        
+
+        marker_5a3adc22639b4d5faa57824a46d37ef0.bindPopup(popup_87b61d947dbb42c9a1d682d45ab27aef)
+        ;
+
+        
+    
+    
+            var marker_65ab3d2fac394c8d9f00dd928e0cc62f = L.marker(
+                [38.0803683, 46.293726],
+                {"fill": true}
+            ).addTo(map_3621256c39ac447895a6e183f165e3c3);
+        
+    
+        var custom_icon_81c894c9733348dcbbca821adfe29016 = L.icon({"iconSize": [20, 20], "iconUrl": "https://raw.githubusercontent.com/adamvizly/adamvizly.github.io/master/icons/university.png"});
+        marker_65ab3d2fac394c8d9f00dd928e0cc62f.setIcon(custom_icon_81c894c9733348dcbbca821adfe29016);
+        
+    
+        var popup_aca34fa08463457597da34a1aeb5647a = L.popup({"maxWidth": 100});
+
+        
+            var html_7383f0b9a99f4fbab2a22871a7940c2e = $(`<div id="html_7383f0b9a99f4fbab2a22871a7940c2e" style="width: 100.0%; height: 100.0%;">Here I studied CS for BS degree</div>`)[0];
+            popup_aca34fa08463457597da34a1aeb5647a.setContent(html_7383f0b9a99f4fbab2a22871a7940c2e);
+        
+
+        marker_65ab3d2fac394c8d9f00dd928e0cc62f.bindPopup(popup_aca34fa08463457597da34a1aeb5647a)
+        ;
+
+        
+    
+    
+            var marker_e9c0882a912b403a96ff7c297ddc7bc0 = L.marker(
+                [35.6968141, 51.3498186],
+                {"fill": true}
+            ).addTo(map_3621256c39ac447895a6e183f165e3c3);
+        
+    
+        var custom_icon_031c6b75c0a84f21b9774d38e9a5c738 = L.icon({"iconSize": [20, 20], "iconUrl": "https://raw.githubusercontent.com/adamvizly/adamvizly.github.io/master/icons/python.png"});
+        marker_e9c0882a912b403a96ff7c297ddc7bc0.setIcon(custom_icon_031c6b75c0a84f21b9774d38e9a5c738);
+        
+    
+        var popup_06683f09997a44b4b86ada0bf0438a01 = L.popup({"maxWidth": 100});
+
+        
+            var html_74b219ed72f54866b25b64cfb4103c75 = $(`<div id="html_74b219ed72f54866b25b64cfb4103c75" style="width: 100.0%; height: 100.0%;">I am currently here working as a Python Developer</div>`)[0];
+            popup_06683f09997a44b4b86ada0bf0438a01.setContent(html_74b219ed72f54866b25b64cfb4103c75);
+        
+
+        marker_e9c0882a912b403a96ff7c297ddc7bc0.bindPopup(popup_06683f09997a44b4b86ada0bf0438a01)
+        ;
+
+        
+    
+    
+            var marker_1b65e4c079a540f396a542181ef4cd65 = L.marker(
+                [36.2975402, 59.4393717],
+                {"fill": true}
+            ).addTo(map_3621256c39ac447895a6e183f165e3c3);
+        
+    
+        var custom_icon_08e77a8bbb2740f592d20e3793c95748 = L.icon({"iconSize": [20, 20], "iconUrl": "https://raw.githubusercontent.com/adamvizly/adamvizly.github.io/master/icons/heart.png"});
+        marker_1b65e4c079a540f396a542181ef4cd65.setIcon(custom_icon_08e77a8bbb2740f592d20e3793c95748);
+        
+    
+        var popup_8bb0274189f045cfb6d1a1ac6782da75 = L.popup({"maxWidth": 100});
+
+        
+            var html_bdf106ae317b429bb7af1fec7adcfe13 = $(`<div id="html_bdf106ae317b429bb7af1fec7adcfe13" style="width: 100.0%; height: 100.0%;">Where I fall in love with my Beautiful fiancé</div>`)[0];
+            popup_8bb0274189f045cfb6d1a1ac6782da75.setContent(html_bdf106ae317b429bb7af1fec7adcfe13);
+        
+
+        marker_1b65e4c079a540f396a542181ef4cd65.bindPopup(popup_8bb0274189f045cfb6d1a1ac6782da75)
+        ;
+
+        
+    
+</script>
