@@ -26,12 +26,18 @@ $('body').terminal({
                   "University of Tabriz  Bachelor's degree in Computer Science\n");
     },
     contact: function() {
-        this.echo("<a href='https://www.linkedin.com/in/ali-asghari/'> LinkedIn </a>\n" +
-                  "<a href='https://github.com/adamvizly'> Github </a>\n" +
-                  "<a href='mailto:asghari.ali10@gmail.com'> Email </a>\n");
+        const linkedin = $("<a href='https://www.linkedin.com/in/ali-asghari/'> LinkedIn </a>");
+        const github = $("<a href='https://github.com/adamvizly'> Github </a>");
+        const email = $("<a href='mailto:asghari.ali10@gmail.com'> Email </a>");
+        this.echo(linkedin);
+        this.echo(github);
+        this.echo(email);
+        this.echo("\n");
     },
     resume: function() {
-        this.echo("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>My Resume</a>\n");
+        const resume = $("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>Resume</a>");
+        this.echo(resume);
+        this.echo("\n");
     },
     experience: function(company) {
         switch (company) {
