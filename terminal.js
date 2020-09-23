@@ -4,7 +4,7 @@ figlet.preloadFonts(["Standard", "Slant"], ready);
 var term;
 
 function ready() {
-    $('body').terminal(function(cmd) {
+   term = $('body').terminal(function(cmd) {
         this.echo(() => render(cmd));
     }, {
         greetings: function() {
