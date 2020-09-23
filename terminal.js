@@ -31,9 +31,7 @@ $('body').terminal({
                   "<a href='mailto:asghari.ali10@gmail.com'> Email </a>\n");
     },
     resume: function() {
-        this.echo("<a href='https://www.linkedin.com/in/ali-asghari/'> LinkedIn </a>\n" +
-                  "<a href='https://github.com/adamvizly'> Github </a>\n" +
-                  "<a href='mailto:asghari.ali10@gmail.com'> Email </a>\n");
+        this.echo("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>My Resume</a>");
     },
     experience: function(company) {
         switch (company) {
