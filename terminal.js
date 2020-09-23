@@ -9,5 +9,5 @@ $('body').terminal({
         this.echo(img);
     }
 }, {
-    greetings: 'Welcome, I am Ali Asghari ' + \n + 'use list to see list of commands.'
+    greetings: 'Welcome, I am Ali Asghari \n use list to see list of commands'
 });
