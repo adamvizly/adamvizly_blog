@@ -78,5 +78,5 @@ $('body').terminal({
 }, {
     checkArity: false,
     completion: true,
-    greetings: 'Welcome, I am Ali Asghari \nUse ls to see list of commands'
+    greetings: '[[;rgba(255,0,255,0.99);]Welcome, I am Ali Asghari] \nUse ls to see list of commands'
 });
