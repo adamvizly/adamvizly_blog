@@ -9,7 +9,7 @@ $('body').terminal({
     },
     about: function() {
         this.echo('Experienced Python Developer with a demonstrated history of working in web development. \n' +
-                  'Skilled in Python, Django, Flask, PostgreSQL and MySQL. Strong algorithms understanding and experience in full software development cycle.');
+                  'Skilled in Python, Django, Flask, PostgreSQL and MySQL. Strong algorithms understanding and experience in full software development cycle.\n');
     },
     skill: function() {
         this.echo('Python  4.5/5 \n' +
@@ -31,7 +31,7 @@ $('body').terminal({
                   "<a href='mailto:asghari.ali10@gmail.com'> Email </a>\n");
     },
     resume: function() {
-        this.echo("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>My Resume</a>");
+        this.echo("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>My Resume</a>\n");
     },
     experience: function(company) {
         switch (company) {
@@ -44,7 +44,7 @@ $('body').terminal({
                           "-Developing and maintaining Snappfood Express application, responsible for handling delivery of ordered food \n" +
                           "-Developing and maintaining a service to handle financial transactions of bikers \n" +
                           "-Developing and maintaining a service to monitor KPIs-Defining and implementing CI/CD procedures \n" +
-                          "-Implementing and maintaining a Docker Swarm orchestration platform to deploy services");
+                          "-Implementing and maintaining a Docker Swarm orchestration platform to deploy services\n");
                 break;
             case 'pezeshkekhoob':
                 this.echo("Back End Developer \nPezeshkekhoob Full-time \nJan 2019 – Sep 2019 \nTehran, Iran \n" +
@@ -52,23 +52,23 @@ $('body').terminal({
                           "My Responsibilities: \n" +
                           "-Created RESTful APIs for increased scalability of the application \n" +
                           "-Renovate old PHP website with new Django powered one \n" +
-                          "-Created monitoring system for BI purposes from scratch with Python and Angular");
+                          "-Created monitoring system for BI purposes from scratch with Python and Angular\n");
                 break;
             case 'zhool':
                 this.echo("Back End Developer \nZhool Part-time \nJul 2018 – Jun 2019 \nTabriz, Iran \n" +
-                          "I was CTO of ZHOOL a startup in art industry that unfortunately failed.");
+                          "I was CTO of ZHOOL a startup in art industry that unfortunately failed.\n");
                 break;
             case 'arasnama':
                 this.echo("Back End Developer \nArasnama Part-time \nJul 2017 – Aug 2018 \nTabriz, Iran \n" +
                           "Arasnama was a advertising platform for local and small businesses through Telegram.\n" + 
                           "I was tech guy at Arasnama and responsible for creating RESTful APIs for increased scalability of the application and integrated with TelegramAPI.\n" +
-                          "we reached 1000 users in less than a week.");
+                          "we reached 1000 users in less than a week.\n");
                 break;
             default:
                 this.echo("snappfood \n" +
                           "pezeshkekhoob \n" + 
                           "zhool \n" +
-                          "arasnama");
+                          "arasnama \n");
         }
     }
 }, {
