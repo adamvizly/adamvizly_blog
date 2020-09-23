@@ -4,9 +4,7 @@ figlet.preloadFonts(["Standard", "Slant"], ready);
 var term;
 
 function ready() {
-    term = $('body').terminal(function(cmd) {
-        // echo function will run it in each render,
-        // so text can be resized based on cols
+    $('body').terminal(function(cmd) {
         this.echo(() => render(cmd));
     }, {
         greetings: function() {
