@@ -76,6 +76,7 @@ $('body').terminal({
         }
     }
 }, {
+    checkArity: false,
     completion: true,
     greetings: 'Welcome, I am Ali Asghari \nUse ls to see list of commands'
 });
