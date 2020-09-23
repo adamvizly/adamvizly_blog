@@ -37,7 +37,7 @@ $('body').terminal({
         const resume = $("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>Resume</a>");
         this.echo(resume);
     },
-    experience: function(company) {
+    experience: function(company='all') {
         switch (company) {
             case 'snappfood':
                 this.echo("Back End Developer \nSnappfood Full-time \nOct 2019 – Present \nTehran, Iran \n" +
@@ -76,5 +76,6 @@ $('body').terminal({
         }
     }
 }, {
+    completion: true,
     greetings: 'Welcome, I am Ali Asghari \nUse ls to see list of commands'
 });
