@@ -3,7 +3,7 @@ $('body').terminal({
         this.echo('about -> about me! \n' +
                   'skill -> my skills \n' +
                   'education -> my educations \n' +
-                  'experience(company name) -> my expperiences company name is optional \n' +
+                  'experience company_name -> my expperiences company name is optional \n' +
                   'contact -> ways of contacting me \n' +
                   'resume -> download pdf version of resume \n');
     },
