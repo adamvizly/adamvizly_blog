@@ -13,6 +13,6 @@
     font-family: Abel;
 }
 
-a {
+.terminal-output > a {
     color: #ffffcc;
 }
