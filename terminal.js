@@ -3,13 +3,15 @@ $('body').terminal({
         this.echo('about -> about me! \n' +
                   'skill -> my skills \n' +
                   'education -> my educations \n' +
-                  'experience company_name -> my expperiences company name is optional \n' +
+                  'experience company_name -> my expperiences (company_name is optional) \n' +
                   'contact -> ways of contacting me \n' +
                   'resume -> download pdf version of resume \n');
     },
     about: function() {
-        this.echo('Experienced Python Developer with a demonstrated history of working in web development. \n' +
-                  'Skilled in Python, Django, Flask, PostgreSQL and MySQL. Strong algorithms understanding and experience in full software development cycle.\n');
+        let date = new Date();
+        let age = date.getFullYear() - 1996;
+        this.echo('Hi I am Ali Asghari and I am a backend developer and I am currently living in Iran. \n' +
+                  'I am ' + age + ' years old and married. I like board games, online video games and spending time with my family.\n');
     },
     skill: function() {
         this.echo('Python  4.5/5 \n' +
@@ -20,6 +22,9 @@ $('body').terminal({
                   'MySQL  4/5 \n' + 
                   'PHP  2/5 \n' +
                   'Angular  1/5 \n');
+    },
+    !?: function() {
+        this.echo("I like your curiosity :D \n");
     },
     education: function() {
         this.echo("Sharif University of Technology  Master's degree in Computer Science (Drop out) \n" +
@@ -78,5 +83,5 @@ $('body').terminal({
 }, {
     checkArity: false,
     completion: true,
-    greetings: '[[;rgba(255,0,255,0.99);]Welcome, I am Ali Asghari] \nUse ls to see list of commands'
+    greetings: '[[;rgba(247,198,20,1);]Welcome to my online resume; my name is Ali Asghari] \nUse ls to see list of commands!'
 });
