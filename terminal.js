@@ -23,7 +23,7 @@ $('body').terminal({
                   'PHP  2/5 \n' +
                   'Angular  1/5 \n');
     },
-    !?: function() {
+    '!?': function() {
         this.echo("I like your curiosity :D \n");
     },
     education: function() {
