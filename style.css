@@ -1,7 +1,12 @@
 :root {
     background-color: #5d635f;
-    color: #0a8c35;
     --size: 1.6;
+    
+}
+
+div {
+    background-color: #5d635f;
+    color: #0a8c35;
     font-family: Impact, Charcoal, sans-serif;
 }
 
