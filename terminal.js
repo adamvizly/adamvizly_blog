@@ -83,5 +83,5 @@ $('body').terminal({
 }, {
     checkArity: false,
     completion: true,
-    greetings: '[[;rgba(247,198,20,1);]Welcome to my online resume; my name is Ali Asghari] \nUse ls to see list of commands!'
+    greetings: '[[;rgba(247,198,20,0.99);]Welcome to my online resume; my name is Ali Asghari] \nUse ls to see list of commands!'
 });
