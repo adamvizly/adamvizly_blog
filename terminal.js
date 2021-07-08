@@ -44,8 +44,21 @@ $('body').terminal({
     },
     experience: function(company='all') {
         switch (company) {
+            case 'nobitex':
+                this.echo("Back End Developer \nNobitex Full-time \nApr 2021 to Present \nTehran, Iran \n" +
+                          "Nobitex is a leading fintech company in Iran which focuses on blockchain and cryptocurrency solutions.\n" +
+                          "My Responsibilities: \n" +
+                          "-Developing and maintaining and scale financial reports \n" +
+                          "-Created a platform to store reports periodically \n");
+                break;
+            case 'beautster':
+                this.echo("Back End Developer \nBeautster Full-time \nFeb 2021 to Mar 2021 \nAlberta, Canada \n" +
+                          "Beautster is a beauty salon reservation startup.\n" +
+                          "My Responsibilities: \n" +
+                          "-Developing and maintaining new website using django 3 and new database \n");
+                break;
             case 'snappfood':
-                this.echo("Back End Developer \nSnappfood Full-time \nOct 2019 – Present \nTehran, Iran \n" +
+                this.echo("Back End Developer \nSnappfood Full-time \nOct 2019 – Feb 2021 \nTehran, Iran \n" +
                           "Snappfood is the leading online food delivery company in Iran.\n" + 
                           "Customers can find menus, order food and get delivered from more than 13,500 restaurants all over Iran through the Snappfood website and mobile application. \n" +
                           "Since its creation in 2009, Snappfood has continuously transformed the way people order food.\n" +
@@ -74,7 +87,9 @@ $('body').terminal({
                           "we reached 1000 users in less than a week.\n");
                 break;
             default:
-                this.echo("snappfood \n" +
+                this.echo("nobitex \n" +
+                          "beautster \n" +
+                          "snappfood \n" +
                           "pezeshkekhoob \n" + 
                           "zhool \n" +
                           "arasnama \n");
