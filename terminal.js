@@ -10,7 +10,7 @@ $('body').terminal({
     about: function() {
         let date = new Date();
         let age = date.getFullYear() - 1996;
-        this.echo('Hi I am Ali Asghari and I am a backend developer and I am currently living in Iran. \n' +
+        this.echo('Hi I am Ali Asghari and I am a backend developer and I am currently living in Turkey. \n' +
                   'I am ' + age + ' years old and married. I like board games, online video games and spending time with my family.\n');
     },
     skill: function() {
@@ -27,7 +27,8 @@ $('body').terminal({
         this.echo("I like your curiosity :D \n");
     },
     education: function() {
-        this.echo("Sharif University of Technology  Master's degree in Computer Science (Drop out) \n" +
+        this.echo("Tarbiat Modares University  Master's degree in Computer Science \n" +
+                  "Sharif University of Technology  Master's degree in Computer Science (Drop out) \n" +
                   "University of Tabriz  Bachelor's degree in Computer Science\n");
     },
     contact: function() {
@@ -44,18 +45,20 @@ $('body').terminal({
     },
     experience: function(company='all') {
         switch (company) {
+            case 'mozayedegar':
+                this.echo("Technical Team Lead \nMozayedegar Full-time \nMar 2023 to Present \nRemote \n" +
+                          "My Responsibilities: \n" +
+                          "-Lead and manage a team of 3 developers, resulting in a 60% improvement in project delivery efficiency through the implementation of best practices. \n" +
+                          "-Initiated knowledge-sharing initiatives, facilitating a 70% increase in team members' skill enhancement via mentorship. \n" +
+                          "-Revamped the design process by introducing agile methodologies, resulting in a 20% reduction in project delivery time and a 15% decrease in rework. \n");
+                break;
             case 'nobitex':
-                this.echo("Back End Developer \nNobitex Full-time \nApr 2021 to Present \nTehran, Iran \n" +
+                this.echo("Back End Developer \nNobitex Full-time \nApr 2021 to Aug 2023 \nRemote \n" +
                           "Nobitex is a leading fintech company in Iran which focuses on blockchain and cryptocurrency solutions.\n" +
                           "My Responsibilities: \n" +
-                          "-Developing and maintaining and scale financial reports \n" +
-                          "-Created a platform to store reports periodically \n");
-                break;
-            case 'beautster':
-                this.echo("Back End Developer \nBeautster Full-time \nFeb 2021 to Mar 2021 \nAlberta, Canada \n" +
-                          "Beautster is a beauty salon reservation startup.\n" +
-                          "My Responsibilities: \n" +
-                          "-Developing and maintaining new website using django 3 and new database \n");
+                          "-Developing and maintaining and scale ﬁnancial reports to handle 2k+ reports monthly. \n" +
+                          "-Created a platform to store reports periodically to handle 1k+ reports daily. \n" +
+                          "-Created RESTful APIs that handles 3+ million requests per day. \n");
                 break;
             case 'snappfood':
                 this.echo("Back End Developer \nSnappfood Full-time \nOct 2019 – Feb 2021 \nTehran, Iran \n" +
@@ -63,35 +66,31 @@ $('body').terminal({
                           "Customers can find menus, order food and get delivered from more than 13,500 restaurants all over Iran through the Snappfood website and mobile application. \n" +
                           "Since its creation in 2009, Snappfood has continuously transformed the way people order food.\n" +
                           "My Responsibilities: \n" +
-                          "-Developing and maintaining Snappfood Express application, responsible for handling delivery of ordered food \n" +
-                          "-Developing and maintaining a service to handle financial transactions of bikers \n" +
-                          "-Developing and maintaining a service to monitor KPIs-Defining and implementing CI/CD procedures \n" +
-                          "-Implementing and maintaining a Docker Swarm orchestration platform to deploy services\n");
+                          "-Developed and maintained Snappfood's Express app for 3k+ daily orders. \n" +
+                          "-Managed financial transaction service for 1k+ bikers weekly. \n" +
+                          "-Developed monitoring service of key performance indicators (KPIs), resulting in a 70% increase in overall performance and a 40% reduction in operational inefficiencies of the management team. \n" +
+                          "-Implemented Docker Swarm for service deployment resulting in 30% faster project deployment. \n");
                 break;
             case 'pezeshkekhoob':
                 this.echo("Back End Developer \nPezeshkekhoob Full-time \nJan 2019 – Sep 2019 \nTehran, Iran \n" +
                           "Pezeshkekhoob is a Platform to book a doctor's appointment with over 32000 doctors and over 1.5 million views per month.\n" + 
                           "My Responsibilities: \n" +
-                          "-Created RESTful APIs for increased scalability of the application \n" +
-                          "-Renovate old PHP website with new Django powered one \n" +
-                          "-Created monitoring system for BI purposes from scratch with Python and Angular\n");
-                break;
-            case 'zhool':
-                this.echo("Back End Developer \nZhool Part-time \nJul 2018 – Jun 2019 \nTabriz, Iran \n" +
-                          "I was CTO of ZHOOL a startup in art industry that unfortunately failed.\n");
+                          "-Developed RESTful APIs for 1.5+ million monthly requests. \n" +
+                          "-Led the creation of a cost-effective monitoring system using Python and Angular, achieving 70% monthly savings. \n" +
+                          "-Upgraded a PHP website to a Django platform, boosting revenue by 10%. \n");
                 break;
             case 'arasnama':
                 this.echo("Back End Developer \nArasnama Part-time \nJul 2017 – Aug 2018 \nTabriz, Iran \n" +
                           "Arasnama was a advertising platform for local and small businesses through Telegram.\n" + 
-                          "I was tech guy at Arasnama and responsible for creating RESTful APIs for increased scalability of the application and integrated with TelegramAPI.\n" +
-                          "we reached 1000 users in less than a week.\n");
+                          "My Responsibilities: \n" +
+                          "-Built RESTful APIs handling 1,000+ daily requests. \n" +
+                          "-Introduced features driving a monthly revenue increase of 90%. \n");
                 break;
             default:
-                this.echo("nobitex \n" +
-                          "beautster \n" +
+                this.echo("mozayedegar \n" +
+                          "nobitex \n" +
                           "snappfood \n" +
-                          "pezeshkekhoob \n" + 
-                          "zhool \n" +
+                          "pezeshkekhoob \n" +
                           "arasnama \n");
         }
     }
