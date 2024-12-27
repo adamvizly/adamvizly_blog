@@ -45,13 +45,6 @@ $('body').terminal({
     },
     experience: function(company='all') {
         switch (company) {
-            case 'mozayedegar':
-                this.echo("Technical Team Lead \nMozayedegar Full-time \nMar 2023 to Present \nRemote \n" +
-                          "My Responsibilities: \n" +
-                          "-Lead and manage a team of 3 developers, resulting in a 60% improvement in project delivery efficiency through the implementation of best practices. \n" +
-                          "-Initiated knowledge-sharing initiatives, facilitating a 70% increase in team members' skill enhancement via mentorship. \n" +
-                          "-Revamped the design process by introducing agile methodologies, resulting in a 20% reduction in project delivery time and a 15% decrease in rework. \n");
-                break;
             case 'nobitex':
                 this.echo("Back End Developer \nNobitex Full-time \nApr 2021 to Aug 2023 \nRemote \n" +
                           "Nobitex is a leading fintech company in Iran which focuses on blockchain and cryptocurrency solutions.\n" +
@@ -87,8 +80,7 @@ $('body').terminal({
                           "-Introduced features driving a monthly revenue increase of 90%. \n");
                 break;
             default:
-                this.echo("mozayedegar \n" +
-                          "nobitex \n" +
+                this.echo("nobitex \n" +
                           "snappfood \n" +
                           "pezeshkekhoob \n" +
                           "arasnama \n");
