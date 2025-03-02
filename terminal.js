@@ -10,7 +10,7 @@ $('body').terminal({
     about: function() {
         let date = new Date();
         let age = date.getFullYear() - 1996;
-        this.echo('Hi I am Ali Asghari and I am a backend developer and I am currently living in Turkey. \n' +
+        this.echo('Hi I am Ali Asghari and I am a backend developer and I am currently living in Iran. \n' +
                   'I am ' + age + ' years old and married. I like board games, online video games and spending time with my family.\n');
     },
     skill: function() {
@@ -40,7 +40,7 @@ $('body').terminal({
         this.echo(email);
     },
     resume: function() {
-        const resume = $("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Resume.pdf'>Resume</a>");
+        const resume = $("<a href='https://github.com/adamvizly/adamvizly.github.io/raw/master/Ali_Asghari.pdf'>Resume</a>");
         this.echo(resume);
     },
     experience: function(company='all') {
