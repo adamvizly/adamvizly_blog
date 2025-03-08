@@ -39,7 +39,7 @@ $('body').terminal({
                   "Email: asghari.ali10@gmail.com \n");
     },
     resume: function() {
-        this.echo("Resume: https://github.com/adamvizly/adamvizly.github.io/raw/master/Ali_Asghari.pdf");
+        this.echo("Resume: https://github.com/adamvizly/adamvizly.github.io/raw/master/ali_asghari_software_engineer.pdf");
     },
     experience: function(company='all') {
         switch (company.toLowerCase()) {
