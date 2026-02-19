@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post — Ali Asghari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><span>~/</span>ali-asghari</a>
+    <ul class="nav-links">
+      <li><a href="/">Model Card</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/ali-asghari-cv-new.pdf" target="_blank">PDF</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <section class="post-header">
+    <a href="/blog/" class="post-back">&larr; Back to blog</a>
+    <h1 id="post-title" class="section-title"></h1>
+    <div id="post-meta" class="post-meta"></div>
+  </section>
+
+  <article id="post-content" class="post-content">
+    <div class="empty-state">
+      <p>Loading...</p>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <p class="footer-text">&copy; 2026 Ali Asghari</p>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/blog.js"></script>
+<script>renderBlogPost();</script>
+</body>
+</html>

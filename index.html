@@ -1,18 +1,247 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Ali Asghari</title>
-  </head>
-  <body class="impact">
-  </body>
-  <script src="terminal.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Asghari — Senior Software Engineer</title>
+  <meta name="description" content="Senior Software Engineer specializing in AI-driven applications, RAG pipelines, and high-scale Python backends.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><span>~/</span>ali-asghari</a>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Model Card</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/ali-asghari-cv-new.pdf" target="_blank">PDF</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-model-name">
+      <span class="org">ali-asghari</span><span class="sep"> / </span><span class="model">senior-engineer-v6.0</span>
+    </div>
+    <h1>Ali Asghari</h1>
+    <p class="hero-title">Senior Software Engineer &amp; AI Specialist</p>
+    <div class="hero-typing">
+      <span id="typing-text"></span><span class="cursor"></span>
+    </div>
+    <div class="badges">
+      <span class="badge"><span class="dot"></span> Building at Careberry</span>
+      <span class="badge">6+ years experience</span>
+      <span class="badge">Python &middot; AI/ML &middot; Backend</span>
+      <span class="badge">Open to Relocation</span>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="section" id="about">
+    <div class="section-label">## Description</div>
+    <h2 class="section-title">About</h2>
+    <p class="about-text">
+      Senior Software Engineer with <strong>6+ years of experience</strong> specializing in
+      AI-driven applications and high-scale Python backends. Expert in architecting
+      <strong>RAG pipelines</strong>, fine-tuning <strong>LLM workflows</strong> (Qwen, GPT, Gemini),
+      and deploying production-grade AI services. Proven track record of handling
+      <strong>3M+ daily requests</strong> and maintaining high system reliability across
+      healthcare, fintech, edtech, and food delivery industries.
+    </p>
+    <div class="relocating">
+      <span>&#x1f4cd;</span> Open to relocating to Barcelona, Spain
+    </div>
+  </section>
+
+  <!-- Capabilities / Skills -->
+  <section class="section" id="skills">
+    <div class="section-label">## Capabilities</div>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="skill-category-title"><span class="icon">&#x1f9e0;</span> AI / ML</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">RAG</span>
+          <span class="skill-tag highlight">LLM Guardrails</span>
+          <span class="skill-tag highlight">LLM Orchestration</span>
+          <span class="skill-tag">Ollama</span>
+          <span class="skill-tag">Groq</span>
+          <span class="skill-tag">ChromaDB</span>
+          <span class="skill-tag">Whisper (STT)</span>
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-category-title"><span class="icon">&#x2699;&#xfe0f;</span> Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Python</span>
+          <span class="skill-tag highlight">FastAPI</span>
+          <span class="skill-tag highlight">Django</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Celery</span>
+          <span class="skill-tag">RabbitMQ</span>
+          <span class="skill-tag">RESTful APIs</span>
+          <span class="skill-tag">System Design</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-category-title"><span class="icon">&#x1f5c4;&#xfe0f;</span> Data &amp; DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">PostgreSQL</span>
+          <span class="skill-tag highlight">Redis</span>
+          <span class="skill-tag">S3</span>
+          <span class="skill-tag highlight">Docker</span>
+          <span class="skill-tag">Docker Swarm</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">Prometheus</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-category-title"><span class="icon">&#x1f4dd;</span> Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Python</span>
+          <span class="skill-tag">JavaScript (React.js)</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Java</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fine-tuning / Experience -->
+  <section class="section" id="experience">
+    <div class="section-label">## Fine-tuning History</div>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <span class="timeline-role">AI Software Engineer</span>
+          <span class="timeline-company">@ Careberry</span>
+          <span class="timeline-date">Dec 2025 — Present</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Designed a high-reliability RAG orchestration layer for healthcare data, implementing LLM response guardrails and validation checks to mitigate hallucinations and ensure 100% adherence to clinical safety protocols.</li>
+          <li>Optimizing LLM inference pipelines to improve response latency and accuracy for internal healthcare workflows.</li>
+          <li>Integrating vector-based search to streamline access to large-scale medical knowledge bases.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <span class="timeline-role">AI Software Engineer</span>
+          <span class="timeline-company">@ G2Tech</span>
+          <span class="timeline-date">Nov 2024 — Nov 2025</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Developed an automated Q&amp;A generation pipeline using Whisper and multi-model LLMs, processing video content into structured educational assets.</li>
+          <li>Engineered a real-time, voice-enabled Q&amp;A RAG system using ChromaDB and Ollama models, allowing users to query lecture content via natural speech.</li>
+          <li>Implemented a Django-based "Chat with PDF" application using Qwen models, enabling context-aware conversations on user-uploaded files.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <span class="timeline-role">Senior Software Engineer</span>
+          <span class="timeline-company">@ Nobitex</span>
+          <span class="timeline-date">Apr 2021 — Aug 2023</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Maintained and optimized high-throughput APIs via Flask, handling 3 million daily requests for a user base of 6+ million.</li>
+          <li>Redesigned a Django reporting engine, achieving a 66% reduction in generation time for critical financial reports.</li>
+          <li>Enhanced system responsiveness by implementing advanced Redis caching strategies and PostgreSQL query tuning.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <span class="timeline-role">Software Engineer</span>
+          <span class="timeline-company">@ Snappfood</span>
+          <span class="timeline-date">Oct 2019 — Feb 2021</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Refactored the order-matching engine using the Hungarian Algorithm, resulting in a 6x speed increase for 3,000+ daily deliveries.</li>
+          <li>Built an autonomous financial microservice using Celery/RabbitMQ to manage weekly payouts for 1,000+ fleet members.</li>
+          <li>Deployed dynamic auto-scaling solutions using Docker Swarm and monitoring dashboards with Grafana and Prometheus, ensuring 99.9% uptime during peak traffic.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Training Data / Education -->
+  <section class="section" id="education">
+    <div class="section-label">## Training Data</div>
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-degree">MSc in Computer Science</div>
+        <div class="education-school">Tarbiat Modares University</div>
+        <div class="education-year">Graduated 2022</div>
+      </div>
+      <div class="education-card">
+        <div class="education-degree">BSc in Computer Science</div>
+        <div class="education-school">University of Tabriz</div>
+        <div class="education-year">Graduated 2019</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Reference / Contact -->
+  <section class="section" id="contact">
+    <div class="section-label">## API Reference</div>
+    <h2 class="section-title">Contact</h2>
+    <div class="api-endpoints">
+      <a href="mailto:asghari.ali10@gmail.com" class="api-endpoint">
+        <span class="api-method post">POST</span>
+        <span class="api-path">/contact/<span class="param">email</span></span>
+        <span class="api-desc">asghari.ali10@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/ali-asghari/" target="_blank" class="api-endpoint">
+        <span class="api-method get">GET</span>
+        <span class="api-path">/connect/<span class="param">linkedin</span></span>
+        <span class="api-desc">ali-asghari</span>
+      </a>
+      <a href="https://github.com/adamvizly" target="_blank" class="api-endpoint">
+        <span class="api-method get">GET</span>
+        <span class="api-path">/repos/<span class="param">github</span></span>
+        <span class="api-desc">adamvizly</span>
+      </a>
+      <a href="tel:+989147146122" class="api-endpoint">
+        <span class="api-method post">POST</span>
+        <span class="api-path">/contact/<span class="param">phone</span></span>
+        <span class="api-desc">+98 914 714 6122</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">&copy; 2026 Ali Asghari &middot; Built with vanilla JS &middot; Deployed on GitHub Pages</p>
+  </footer>
+
+</div>
+
+<script src="/js/main.js"></script>
+</body>
 </html>
