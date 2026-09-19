@@ -805,19 +805,19 @@ a:hover {
   align-items: center;
 }
 
-/* Dropdown Trigger Button */
 .dropdown-trigger {
   background: transparent;
   border: none;
-  color: inherit;
+  color: var(--text-secondary);
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.875rem;
   font-weight: 500;
+  line-height: 1.7;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 6px 10px;
+  padding: 0;
   border-radius: 6px;
   transition: color 0.2s ease, background 0.2s ease;
 }
@@ -829,7 +829,7 @@ a:hover {
 
 .nav-dropdown:hover .dropdown-trigger,
 .nav-dropdown:focus-within .dropdown-trigger {
-  color: #38bdf8; /* Accent light blue matching tech theme */
+  color: var(--text-primary);
 }
 
 .nav-dropdown:hover .dropdown-arrow {
@@ -839,13 +839,12 @@ a:hover {
 /* Dropdown Menu Box */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 0;
   min-width: 240px;
-  margin-top: 8px;
-  background: rgba(15, 23, 42, 0.95); /* Deep slate match */
+  background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
   padding: 6px;
@@ -856,7 +855,15 @@ a:hover {
   z-index: 1000;
 }
 
-/* Show on Hover or Focus */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 0;
+  right: 0;
+  height: 9px;
+}
+
 .nav-dropdown:hover .dropdown-menu,
 .nav-dropdown:focus-within .dropdown-menu {
   opacity: 1;
@@ -864,7 +871,6 @@ a:hover {
   transform: translateY(0);
 }
 
-/* Individual Game Link */
 .dropdown-item {
   display: flex;
   align-items: center;
@@ -878,7 +884,7 @@ a:hover {
 
 .dropdown-item:hover {
   background: rgba(56, 189, 248, 0.12);
-  color: #38bdf8;
+  color: var(--accent);
 }
 
 .game-icon {
@@ -893,11 +899,11 @@ a:hover {
 .game-title {
   font-size: 0.875rem;
   font-weight: 600;
-  font-family: 'JetBrains Mono', monospace;
-  color: #f8fafc;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
 }
 
 .game-desc {
   font-size: 0.725rem;
-  color: #94a3b8;
+  color: var(--text-secondary);
 }
